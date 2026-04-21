@@ -9,63 +9,92 @@
   </head>
     
   <body>
-  <html><head><title>gkit</title>
-<link href="https://iconsax.gitlab.io/i/icons.css" rel="stylesheet">
-<script src="https://unpkg.com/@phosphor-icons/web"></script>
+<html>
+<head>
+    <title>bdy</title>
+    <link href="https://iconsax.gitlab.io/i/icons.css" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
-<script type="text/javascript">
-      document.onkeydown = function(){return false};
-        document.oncontextmenu = function(){return false}
-    </script>
-   </head>
-  
+</head>
 <body class="tag-page">
 
 <main>
-<aside id="left-sidebar">
-<div id="left-wrap">
-    
-    <div id="sidebarimg"><img src="https://i.ibb.co/Dfsy34HC/lanistam.png"/ draggable="false"></div>
-        
-    <div id="blogname"><a target="_blank" href="https://forum.xat.com/profile/58610/">need a nap stat</a></div>
-    <div id="handle"><i class="iconsax" icon-name="user-1-square"></i>birdy</div>
-    
-    <div id="description"><b>mar</b> ; argentina. escorpio. lq.
-      
-      <div class="spotify-scroll">
-        <a href="https://open.spotify.com/intl-es/track/5R65WfxdtxpTNSIloTfIdM?si=7c542532b5504b62" target="_blank">
-          <span>now playing: God knows i tried ♫</span></a></div>
-      </div><br>
-      
-      
-    <div class="search-box">
-        <i class="ph ph-magnifying-glass"></i>
-        <form class="search" action="https://xat.com/tools#!search" method="get">
-    <input type="text" name="q" class="query" placeholder="bingos, chisme, etc.">
-</form>
-    </div>
-    
-</div>
-</aside>
-
+    <aside id="left-sidebar">
+        <div id="left-wrap">
+            <div id="sidebarimg"><img src="https://i.ibb.co/Dfsy34HC/lanistam.png" draggable="false"></div>
+            <div id="blogname"><a target="_blank" href="https://forum.xat.com/profile/58610/">need a nap stat</a></div>
+            <div id="handle"><i class="iconsax" icon-name="user-1-square"></i>birdy</div>
+            <div id="description"><b>mar</b> ; argentina. escorpio. lq.
+                <div class="spotify-scroll">
+                    <a href="#" target="_blank"><span>now playing: God knows i tried ♫</span></a>
+                </div>
+            </div>
+            <div class="search-box">
+                <i class="ph ph-magnifying-glass"></i>
+                <form class="search" action="https://xat.com/tools#!search" method="get">
+                    <input type="text" name="q" class="query" placeholder="bingos, chisme, etc.">
+                </form>
+            </div>
+        </div>
+    </aside>
 </main>
-<div id="music-player">
-    <div class="play-pause-btn" onclick="toggleMusic()">
+
+<div id="controls-container">
+    <button class="icon-btn" onclick="toggleModal()" title="besties"><i class="ph-fill ph-heart"></i></button>
+    <div class="icon-btn" onclick="toggleMusic()">
         <i id="music-icon" class="ph ph-play"></i>
     </div>
-    <audio id="bg-music" loop>
-        <source src="https://www.dropbox.com/scl/fi/c14sr29sn8l5b6vclaabp/ldr-gkit.mp3?rlkey=bepr4nmmpfmtvg6bxbobcozwl&st=6krc7rv6&dl=1" type="audio/mpeg">
-    </audio>
+    <a href="https://xat.com/viciososymas" title="find me." class="icon-btn"><i class="ph ph-link"></i></a>
 </div>
 
+<div id="friends-modal" onclick="closeModalOutside(event)">
+    <div class="modal-content">
+        <div class="modal-title">my girls</div>
+        <div class="friends-grid">
+            
+            <div class="friend-item">
+                <a href="https://xat.me/xSei" target="_blank" class="friend-circle"><img src="https://xatimg.com/image/SQlXyTklIyia.png" draggable="false"></a>
+                <span class="friend-name">sei</span>
+            </div>
 
-<a href="https://xat.com/viciososymas" title="find me." id="soft"><i class="ph ph-heart"></i></a>
+            <div class="friend-item">
+                <a href="https://xat.me/BABii3MSC2710" target="_blank" class="friend-circle"><img src="https://xatimg.com/image/sFJtRh3r8pen.gif" draggable="false"></a>
+                <span class="friend-name">milly</span>
+            </div>
+
+            <div class="friend-item">
+                <a href="https://xat.me/irrealidad" target="_blank" class="friend-circle"><img src="https://xatimg.com/image/09tDlV1iYCHK.png" draggable="false"></a>
+                <span class="friend-name">dome</span>
+            </div>
+
+            <div class="friend-item">
+                <a href="https://xat.me/arcanius12" target="_blank" class="friend-circle"><img src="https://xatimg.com/image/B4pmZoLw7gsl.jpg" draggable="false"></a>
+                <span class="friend-name">cele</span>
+            </div>
+
+            <div class="friend-item">
+                <a href="https://xat.me/barbiedesire" target="_blank" class="friend-circle"><img src="https://media4.giphy.com/media/v1.Y2lkPTUwZDk0NGRka2lmajJ6Y3RoN2ZoajcwbzlvZXJyajlqYmExbTVvdGNlNzZpemU1cCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/87qwMtRSdAwjqZhFgI/100w.gif"  draggable="false"></a>
+                <span class="friend-name">barbie</span>
+            </div>
+
+            <div class="friend-item">
+                <a href="https://xat.me/tupsy" target="_blank" class="friend-circle"><img src="https://xatimg.com/image/Yeefp7C3P9zV.jpg" draggable="false"></a>
+                <span class="friend-name">tupsy</span>
+            </div>
+
+        </div>
+        <div class="close-modal" onclick="toggleModal()">[ x ]</div>
+    </div>
+</div>
+
+<audio id="bg-music" loop>
+    <source src="https://www.dropbox.com/scl/fi/c14sr29sn8l5b6vclaabp/ldr-gkit.mp3?rlkey=bepr4nmmpfmtvg6bxbobcozwl&st=6krc7rv6&dl=1" type="audio/mpeg">
+</audio>
 
 
- 
 </body>
 </html>
     <script  src="./script.js"></script>
