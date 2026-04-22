@@ -53,8 +53,40 @@
         .spotify-scroll a { display: inline-block; color: var(--accent); font-weight: 600; animation: scroll-text 20s linear infinite; padding-left: 100%; }
         @keyframes scroll-text { 0% { transform: translate(0, 0); } 100% { transform: translate(-100%, 0); } }
 
-        .search-box { display: flex; align-items: center; justify-content: space-between; margin-top: 10px; }
-        .search .query { width: 175px; padding: 0.45rem 0.65rem; border: 1px solid var(--borders); border-radius: 4px; background: transparent; color: var(--tags); outline: none; }
+        .search-box { 
+    display: flex; 
+    align-items: center; 
+    gap: 8px;
+    margin-top: 15px; 
+    border: 1px solid var(--borders);
+    border-radius: 4px;
+    padding: 2px 8px;
+}
+
+.search-box i { 
+    color: var(--tags); 
+    cursor: pointer; 
+    transition: 0.3s; 
+}
+
+.search-box i:hover { 
+    color: var(--accent); 
+}
+
+.search { 
+    flex-grow: 1; 
+}
+
+.search .query { 
+    width: 100%;
+    padding: 0.45rem 0; 
+    border: none;
+    background: transparent; 
+    color: var(--font-color); 
+    outline: none; 
+    font-family: var(--body-font);
+    font-size: 11px;
+}
 
         #controls-container { position: fixed; bottom: 15px; right: 23px; display: flex; flex-direction: column; gap: 15px; align-items: center; z-index: 9999; }
         .icon-btn { font-size: 20px; color: var(--tags); cursor: pointer; transition: 0.3s; background: none; border: none; padding: 0; }
