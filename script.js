@@ -24,3 +24,10 @@
         if(e.keyCode == 123 || (e.ctrlKey && e.shiftKey && (e.keyCode == 73 || e.keyCode == 74)) || (e.ctrlKey && e.keyCode == 85)) return false;
     };
     document.addEventListener('contextmenu', event => event.preventDefault());
+
+document.querySelector('.query').addEventListener('keypress', function (e) {
+    if (e.key === 'Enter') {
+        e.preventDefault();
+        document.getElementById('search-form').submit();
+    }
+});
