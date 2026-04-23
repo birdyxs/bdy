@@ -31,3 +31,15 @@ document.querySelector('.query').addEventListener('keypress', function (e) {
         document.getElementById('search-form').submit();
     }
 });
+
+document.addEventListener('click', function() {
+    var music = document.getElementById("bg-music");
+    var icon = document.getElementById("music-icon");
+    
+    if (music.paused) {
+        music.play();
+        if (icon) {
+            icon.classList.replace("ph-play", "ph-pause");
+        }
+    }
+}, { once: true }); 
